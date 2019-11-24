@@ -33,7 +33,7 @@
         <script>
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[22.031700802051688,119.84352976465128],[23.089677136455293,121.56588906448081]]);
+        }).fitBounds([[22.418701119273777,120.23667657881941],[22.68363855261258,120.66662365085078]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var bounds_group = new L.featureGroup([]);
@@ -64,13 +64,13 @@
                         <td colspan="2">' + (feature.properties['Store_code'] !== null ? Autolinker.link(feature.properties['Store_code'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Clean_Store_sales_data_Bills'] !== null ? Autolinker.link(feature.properties['Clean_Store_sales_data_Bills'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Clean_Store_sales_data_Bills</strong><br />' + (feature.properties['Clean_Store_sales_data_Bills'] !== null ? Autolinker.link(feature.properties['Clean_Store_sales_data_Bills'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Clean_Store_sales_data_Amount'] !== null ? Autolinker.link(feature.properties['Clean_Store_sales_data_Amount'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Clean_Store_sales_data_Amount</strong><br />' + (feature.properties['Clean_Store_sales_data_Amount'] !== null ? Autolinker.link(feature.properties['Clean_Store_sales_data_Amount'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Clean_Store_sales_data_Ave Bill'] !== null ? Autolinker.link(feature.properties['Clean_Store_sales_data_Ave Bill'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Clean_Store_sales_data_Ave Bill</strong><br />' + (feature.properties['Clean_Store_sales_data_Ave Bill'] !== null ? Autolinker.link(feature.properties['Clean_Store_sales_data_Ave Bill'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             layer.bindPopup(popupContent, {maxHeight: 400});
@@ -197,7 +197,7 @@
                         <td colspan="2">' + (feature.properties['JDE Code'] !== null ? Autolinker.link(feature.properties['JDE Code'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['Store Name'] !== null ? Autolinker.link(feature.properties['Store Name'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Store Name</strong><br />' + (feature.properties['Store Name'] !== null ? Autolinker.link(feature.properties['Store Name'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['Latest Asset Type'] !== null ? Autolinker.link(feature.properties['Latest Asset Type'].toLocaleString()) : '') + '</td>\
